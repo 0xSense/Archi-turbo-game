@@ -6,7 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-turbo = { version = "*", package = "turbo-genesis-sdk" }
+turbo = { version = "*", package = "turbo-genesis-sdk", features = [
+    "solana",
+] }
 
 [lib]
 crate-type = ["cdylib"]

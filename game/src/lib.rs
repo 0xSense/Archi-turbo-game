@@ -10,3 +10,11 @@ turbo::go! {
         font = Font::L
     );
 }
+
+// game configuration
+
+turbo::cfg!{r#"
+    [solana]
+    http-rpc-url = "http://localhost:8899"
+    ws-rpc-url = "ws://localhost:8900"
+"#}
